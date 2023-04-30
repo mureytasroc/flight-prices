@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "flight-prices"
+version = "0.1.0"
+description = "A Python script for collecting flight price information from an Amadeus API and storing it in TimescaleDB"
+authors = ["Charles Cunningham <mureytasroc@gmail.com>"]
+readme = "README.md"
+packages = [{include = "flight_prices"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.29.0"
+psycopg2 = "^2.9.6"
+argparse = "^1.4.0"
+airportsdata = "^20230408"
+tqdm = "^4.65.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
